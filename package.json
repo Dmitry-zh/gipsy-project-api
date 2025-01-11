@@ -1,0 +1,42 @@
+{
+  "name": "project-gipsy-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project tsconfig.json && tsc-alias --resolve-full-paths -p tsconfig.json",
+    "start": "node build/index.js",
+    "dev": "tsx watch src",
+    "lint": "eslint src/** --fix",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2",
+    "qs": "^6.13.1",
+    "tsx": "^4.19.2",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.17.0",
+    "@types/axios": "^0.14.4",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "@types/uuid": "^10.0.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.14.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.19.1"
+  }
+}
