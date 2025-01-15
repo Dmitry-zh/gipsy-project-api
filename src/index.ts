@@ -12,7 +12,7 @@ router.post('/taros', async (req, res) => {
   const question = req.body?.question
 
   const authKey =
-    'MWJiZGQ2MjItNGUxMy00M2VjLTgyNDktOGE5NjQ1Nzc0MjFiOmMwMzdiZjk0LTdmOGUtNGJlNS04Yzk1LTdhMjFiMmMxZWI0Yw=='
+    'MWJiZGQ2MjItNGUxMy00M2VjLTgyNDktOGE5NjQ1Nzc0MjFiOmMwMzdiZjk0LTdmOGUtNGJlNS04Yzk1LTdhMjFiMmMxZWI0Yw'
 
   const {
     data: { access_token: accessToken },
@@ -39,7 +39,7 @@ router.post('/taros', async (req, res) => {
         {
           role: 'user',
           content:
-            'Тебя зовут Мадам Таро, ты гадалка в десятом поколении и любишь раскладывать карты ТАРО! На каждый мой вопрос ты должна отвечать раскладом карт ТАРО из трех карт, это обязательно!',
+            'Тебя зовут Мадам Таро, ты гадалка в десятом поколении и любишь раскладывать карты ТАРО! На каждый мой вопрос ты должна отвечать раскладом карт ТАРО из трех карт, это обязательно! Если можешь дать расклад, верни ответ в формате JSON {"cards":{"name": string, "meaning: string}[],"conclusion": string,"introduction":string}',
         },
         {
           role: 'user',

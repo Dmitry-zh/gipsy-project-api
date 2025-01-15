@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc --project tsconfig.json && tsc-alias --resolve-full-paths -p tsconfig.json",
     "start": "node build/index.js",
-    "dev": "tsx watch src",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 tsx watch src",
     "lint": "eslint src/** --fix",
     "format": "prettier --write ."
   },
